@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitFundTracker.UI", "FruitFundTracker\FruitFundTracker.UI.csproj", "{13A8F3E6-6424-457C-B470-9AF42B17C323}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3466DE9-26B8-4AFB-A222-88463171C7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5A47E68E-3DC4-41AB-AB0D-B282768C49CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitFundTracker.Core", "FruitFundTracker.Core\FruitFundTracker.Core.csproj", "{CFE54C47-4F72-4A59-B954-39067C3B44FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FruitFundTracker.Infrastructure", "FruitFundTracker.Infrastructure\FruitFundTracker.Infrastructure.csproj", "{7B283BF3-CE80-49B2-838E-F45701C37C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A8F3E6-6424-457C-B470-9AF42B17C323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A8F3E6-6424-457C-B470-9AF42B17C323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A8F3E6-6424-457C-B470-9AF42B17C323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A8F3E6-6424-457C-B470-9AF42B17C323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE54C47-4F72-4A59-B954-39067C3B44FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE54C47-4F72-4A59-B954-39067C3B44FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE54C47-4F72-4A59-B954-39067C3B44FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE54C47-4F72-4A59-B954-39067C3B44FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B283BF3-CE80-49B2-838E-F45701C37C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B283BF3-CE80-49B2-838E-F45701C37C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B283BF3-CE80-49B2-838E-F45701C37C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B283BF3-CE80-49B2-838E-F45701C37C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13A8F3E6-6424-457C-B470-9AF42B17C323} = {B3466DE9-26B8-4AFB-A222-88463171C7DA}
+		{CFE54C47-4F72-4A59-B954-39067C3B44FA} = {B3466DE9-26B8-4AFB-A222-88463171C7DA}
+		{7B283BF3-CE80-49B2-838E-F45701C37C8E} = {B3466DE9-26B8-4AFB-A222-88463171C7DA}
+	EndGlobalSection
+EndGlobal

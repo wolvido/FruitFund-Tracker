@@ -1,0 +1,24 @@
+﻿.header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    object-fit: scale-down;
+    margin-top: 1vh;
+    width: 15rem;
+}
+
+.header__user{
+
+}
+
+
+.header_margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}

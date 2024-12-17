@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/common.blocks/header/header.css" />
+    <link rel="stylesheet" href="~/common.blocks/main/main.css" />
+    <link rel="stylesheet" href="~/common.blocks/body/body.css" />
+</head>
+<body class="body">
+
+    <header class="header header_margin">
+        <img class="header__logo" src="~/common.blocks/header/fruitfund-tracker-logo.png" />
+        <div class="header__user">Welcome, Winzyl</div>
+    </header>
+
+    <main class="main main_padding">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

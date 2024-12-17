@@ -1,0 +1,9 @@
+﻿.main {
+    background-color: #F3F6FF;
+    height: 100vh;
+}
+
+.main_padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
