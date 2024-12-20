@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="~/common.blocks/header/header.css" />
     <link rel="stylesheet" href="~/common.blocks/main/main.css" />
     <link rel="stylesheet" href="~/common.blocks/body/body.css" />
+    <link rel="stylesheet" href="~/common.blocks/sidebar/sidebar.css" />
+
+
 </head>
 <body class="body">
 
@@ -20,11 +23,34 @@
         <div class="header__user">Welcome, Winzyl</div>
     </header>
 
-    <main class="main main_padding">
-        @RenderBody()
-    </main>
+    <div class="main main__wrapper">
+
+        <aside class=" sidebar">
+            <button class="sidebar__button">☰</button>
+            <nav class="sidebar__nav main__sidebar-nav">
+                <ul class="sidebar__nav-list">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="/Home/About">About</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="/Home/Contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main__content main_padding">
+            @RenderBody()
+        </main>
+    </div>
+
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/common.blocks/main/main__sidebar.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
