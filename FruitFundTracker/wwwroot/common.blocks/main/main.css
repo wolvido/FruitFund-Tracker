@@ -4,7 +4,8 @@
 
 .main__content {
     position: relative;
-    left: 160px;
+    margin-left: 160px;
+    flex-grow: 1;
 }
 
 .main_padding {
