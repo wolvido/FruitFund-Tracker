@@ -44,3 +44,4 @@ msbuild.wrn
 
 # appsettings
 appsettings.json
+ResharperConfig.cs

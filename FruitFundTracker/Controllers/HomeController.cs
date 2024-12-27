@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using FruitFundTracker.Models;
+using FruitFundTracker.UI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FruitFundTracker.Controllers
