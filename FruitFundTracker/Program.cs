@@ -19,9 +19,11 @@ builder.Services.AddWebOptimizer(pipeline =>
     pipeline.AddFiles("text/css", "common.blocks/**/*.css", "desktop.blocks/**/*.css", "mobile.blocks/**/*.css");
     pipeline.AddFiles("text/javascript", "common.blocks/**/*.js", "desktop.blocks/**/*.js", "mobile.blocks/**/*.js");
 
-    pipeline.MinifyJsFiles("text/javascript", "common.blocks/**/*.js", "desktop.blocks/**/*.js", "mobile.blocks/**/*.js");
+    //pipeline.MinifyJsFiles("text/javascript", "common.blocks/**/*.js", "desktop.blocks/**/*.js", "mobile.blocks/**/*.js");
 
     pipeline.AddCssBundle("/bundle.css", "common.blocks/**/*.css", "desktop.blocks/**/*.css", "mobile.blocks/**/*.css");
+
+    pipeline.AddBundle("/bundle.js","text/javascript; charset=UTF-8", "common.blocks/**/*.js", "desktop.blocks/**/*.js", "mobile.blocks/**/*.js").Concatenate();
 });
 
 var app = builder.Build();

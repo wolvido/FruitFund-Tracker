@@ -1,3 +1,19 @@
 ﻿@model MonthlyDeficitViewModel
 
-<div>Deficit this month: @Model.MonthlyDeficit</div>
+<article class="card card_small">
+    <h2>Total Deficit for [Month Name]</h2>
+
+    <section>
+        <div> @Model.MonthlyDeficit </div>
+
+        <div>
+            <div> Contribution Deficit: <strong>@Model.MonthlyContributionDeficit</strong></div>
+            <div> Loan: <strong>@Model.MonthlyRepaymentDeficit</strong></div>
+        </div>
+    </section>
+
+    <div class="card__chart-container">
+        <canvas class="card__deficit-chart"></canvas>
+    </div>
+
+</article>
