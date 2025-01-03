@@ -1,16 +1,58 @@
 ﻿.card {
-
-    color: red;
-    border: 2px solid #f33;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.2);
+    display: flex;
+    border-radius: 5.5px;
+    padding: 8px 8px 8px 8px;
+    flex-direction: column;
+    background-color: white;
 }
 
 .card_small {
-    height: 16vh;
-    flex: 1 1 200px;
-   
+    min-height: 16vh;
+    flex: 1 1 110px;
 }
 
 .card_large {
     height: 50vh;
     flex: 1 1 400px;
 }
+
+.card__title {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card__chart-container {
+    height: 100px;
+    margin-top: 0;
+}
+
+.card__value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: red;
+}
+
+.card__contribution-deficit {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.card__loan {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+

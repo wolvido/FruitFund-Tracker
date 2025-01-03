@@ -1,8 +1,17 @@
-﻿.cards {
+﻿
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    }
 }

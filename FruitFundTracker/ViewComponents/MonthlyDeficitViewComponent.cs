@@ -9,8 +9,8 @@ namespace FruitFundTracker.UI.ViewComponents
         {
             var model = new MonthlyDeficitViewModel
             {
-                MonthlyDeficit = 1000,
-                MonthlyContributionDeficit = 500,
+                MonthlyDeficit = 900,
+                MonthlyContributionDeficit = 400,
                 MonthlyRepaymentDeficit = 500
             };
 

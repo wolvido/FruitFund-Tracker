@@ -1,19 +1,27 @@
 ﻿@model MonthlyDeficitViewModel
 
+<script src="~/common.blocks/card/card__deficit-chart.js" defer></script>
+
 <article class="card card_small">
-    <h2>Total Deficit for [Month Name]</h2>
+    <h2 class="card__title">Total Deficit for [Month Name]</h2>
 
-    <section>
-        <div> @Model.MonthlyDeficit </div>
+    <section class="card__body">
+        <section class="card__info">
 
-        <div>
-            <div> Contribution Deficit: <strong>@Model.MonthlyContributionDeficit</strong></div>
-            <div> Loan: <strong>@Model.MonthlyRepaymentDeficit</strong></div>
+            <div class="card__value">₱@Model.MonthlyDeficit </div>
+
+            <div>
+                <div class="card__contribution-deficit"> Contribution Deficit: ₱<strong>@Model.MonthlyContributionDeficit</strong></div>
+                <div class="card__loan"> Loan: ₱<strong>@Model.MonthlyRepaymentDeficit</strong></div>
+            </div>
+
+        </section>
+
+        <div class="card__chart-container">
+            <canvas class="card__deficit-chart"></canvas>
         </div>
+
     </section>
 
-    <div class="card__chart-container">
-        <canvas class="card__deficit-chart"></canvas>
-    </div>
 
 </article>
