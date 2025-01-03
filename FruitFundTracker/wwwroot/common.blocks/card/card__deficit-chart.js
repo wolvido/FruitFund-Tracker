@@ -1,26 +1,31 @@
 ﻿$(function() {
 
-    let contributionDeficit = $(".card__contribution-deficit > strong");
-    let loanDeficit = $(".card__loan > strong");
+    let contributionDeficit = $(".card__info_contribution-deficit > strong");
+    let loanDeficit = $(".card__info_loan > strong");
+    let monthlyTotalDue = $(".card__monthly-due").first();
 
-    let contributionDeficitInt = parseInt(contributionDeficit.text());
-    let loanDeficitInt = parseInt(loanDeficit.text());
+    let contributionDeficitNum = parseInt(contributionDeficit.text());
+    let loanDeficitNum = parseInt(loanDeficit.text());
+    let monthlyTotalDueNum = parseInt(monthlyTotalDue.text());
+
+    let monthlyRemainingDue = monthlyTotalDueNum - (contributionDeficitNum + loanDeficitNum);
 
     //set colors
     let contributionDeficitColor = "#FF6F00";
     let loanDeficitColor = "#FFD54F";
+    let monthlyRemainingDueColor = "green";
 
     contributionDeficit.css("color", contributionDeficitColor); 
     loanDeficit.css("color", loanDeficitColor);
 
     const ctx = $(".card__deficit-chart");
 
-    const data = {
+    let data = {
+        labels: ["Contribution Deficit", "Loan", "Paid"],
         datasets: [
             {
-                label: 'Dataset 1',
-                data: [contributionDeficitInt, loanDeficitInt],
-                backgroundColor: [contributionDeficitColor, loanDeficitColor]
+                data: [contributionDeficitNum, loanDeficitNum, monthlyRemainingDue],
+                backgroundColor: [contributionDeficitColor, loanDeficitColor, monthlyRemainingDueColor]
             }
         ]
     };
@@ -32,7 +37,7 @@
             responsive: true,
             plugins: {
                 legend: {
-                    position: 'top',
+                    display: false,
                 }
             }
         },

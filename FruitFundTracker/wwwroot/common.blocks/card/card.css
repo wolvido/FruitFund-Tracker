@@ -22,7 +22,7 @@
     margin: 0;
 }
 
-.card__info {
+.card__info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -43,16 +43,17 @@
 .card__value {
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+.card__value_deficit {
     color: red;
 }
 
-.card__contribution-deficit {
+.card__value_paid {
+    color: green;
+}
+
+.card__info {
     font-size: 0.8rem;
     font-weight: 200;
 }
-
-.card__loan {
-    font-size: 0.8rem;
-    font-weight: 200;
-}
-

@@ -6,13 +6,14 @@
     <h2 class="card__title">Total Deficit for [Month Name]</h2>
 
     <section class="card__body">
-        <section class="card__info">
+        <section class="card__info-wrapper">
 
-            <div class="card__value">₱@Model.MonthlyDeficit </div>
+            <div class="card__value card__value_deficit">₱@Model.MonthlyDeficit </div>
 
             <div>
-                <div class="card__contribution-deficit"> Contribution Deficit: ₱<strong>@Model.MonthlyContributionDeficit</strong></div>
-                <div class="card__loan"> Loan: ₱<strong>@Model.MonthlyRepaymentDeficit</strong></div>
+                <div class="card__info card__info_contribution-deficit"> Contribution Deficit: ₱<strong>@Model.MonthlyContributionDeficit</strong></div>
+                <div class="card__info card__info_loan"> Loan: ₱<strong>@Model.MonthlyRepaymentDeficit</strong></div>
+                <div class="card__monthly-due" hidden>@Model.MonthlyTotalDue</div>
             </div>
 
         </section>

@@ -6,5 +6,6 @@
         public decimal MonthlyContributionDeficit { get; set; }
 
         public decimal MonthlyRepaymentDeficit { get; set; }
+        public decimal MonthlyTotalDue { get; set; }
     }
 }
