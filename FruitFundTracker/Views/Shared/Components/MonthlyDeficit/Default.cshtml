@@ -8,13 +8,13 @@
     <section class="card__body">
         <section class="card__info-wrapper">
 
-            <div class="card__value card__value_deficit">₱@Model.MonthlyDeficit </div>
+            <div class="card__value card__deficit">₱@Model.MonthlyDeficit </div>
 
-            <div>
+            <section>
                 <div class="card__info card__info_contribution-deficit"> Contribution Deficit: ₱<strong>@Model.MonthlyContributionDeficit</strong></div>
                 <div class="card__info card__info_loan"> Loan: ₱<strong>@Model.MonthlyRepaymentDeficit</strong></div>
                 <div class="card__monthly-due" hidden>@Model.MonthlyTotalDue</div>
-            </div>
+            </section>
 
         </section>
 

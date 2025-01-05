@@ -8,10 +8,6 @@
     let loanPaidNum = parseInt(loanPaid.text());
     let monthlyTotalDueNum = parseInt(monthlyTotalDue.text());
 
-    console.log(contributionPaidNum);
-    console.log(loanPaidNum);
-    console.log(monthlyTotalDueNum);
-
     let monthlyRemainingDue = monthlyTotalDueNum - (contributionPaidNum + loanPaidNum);
 
     //set colors

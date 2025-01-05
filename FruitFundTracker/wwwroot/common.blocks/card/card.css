@@ -45,11 +45,11 @@
     font-weight: 600;
 }
 
-.card__value_deficit {
+.card__deficit {
     color: red;
 }
 
-.card__value_paid {
+.card__paid {
     color: green;
 }
 

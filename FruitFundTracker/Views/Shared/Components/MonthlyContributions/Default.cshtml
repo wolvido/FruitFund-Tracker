@@ -1,0 +1,30 @@
+﻿@model ContributionsViewModel
+
+<script src="~/common.blocks/card/card__contribution-chart.js" defer></script>
+
+<article class="card card_small">
+
+    <h2 class="card__title">Contributions</h2>
+
+    <section class="card__body">
+
+        <section class="card__info-wrapper">
+
+            <div class="card__value card__paid card__value_paid">Paid: ₱<strong>@Model.PaidContributions</strong> </div>
+
+            <div class="card__value card__deficit card__value_deficit">Deficit: ₱<strong>@Model.UnPaidContributions</strong> </div>
+
+            <section>
+                <div class="card__info"> Paid Members <strong class="card__paid">@Model.PaidMembers</strong></div>
+                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.UnPaidMembers</strong></div>
+            </section>
+
+        </section>
+
+        <div class="card__chart-container">
+            <canvas class="card__contribution-chart"></canvas>
+        </div>
+
+    </section>
+
+</article>
