@@ -1,22 +1,22 @@
-﻿@model ContributionsViewModel
+﻿@model MonthlyContributionsViewModel
 
 <script src="~/common.blocks/card/card__contribution-chart.js" defer></script>
 
 <article class="card card_small">
 
-    <h2 class="card__title">Contributions</h2>
+    <h2 class="card__title">Contribution Status for [Month Name]</h2>
 
     <section class="card__body">
 
         <section class="card__info-wrapper">
 
-            <div class="card__value card__paid card__value_paid">Paid: ₱<strong>@Model.PaidContributions</strong> </div>
+            <div class="card__value card__value_small card__paid card__paid_contribution">Paid: ₱<strong>@Model.MonthlyPaidContributions</strong> </div>
 
-            <div class="card__value card__deficit card__value_deficit">Deficit: ₱<strong>@Model.UnPaidContributions</strong> </div>
+            <div class="card__value card__value_small card__deficit card__deficit_contribution">Deficit: ₱<strong>@Model.MonthlyUnPaidContributions</strong> </div>
 
             <section>
-                <div class="card__info"> Paid Members <strong class="card__paid">@Model.PaidMembers</strong></div>
-                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.UnPaidMembers</strong></div>
+                <div class="card__info"> Paid Members <strong class="card__paid">@Model.MonthlyPaidMembers</strong> </div>
+                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.MonthlyUnPaidMembers</strong> </div>
             </section>
 
         </section>

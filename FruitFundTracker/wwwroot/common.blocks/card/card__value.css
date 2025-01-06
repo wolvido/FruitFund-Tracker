@@ -1,0 +1,12 @@
+﻿.card__value {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card__value_small {
+    font-size: 1.3rem;
+}
+
+/*.card__value_paid, .card__value_deficit {
+    font-size: 1.3rem;
+}*/

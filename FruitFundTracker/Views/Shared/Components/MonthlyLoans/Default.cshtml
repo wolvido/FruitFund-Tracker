@@ -1,0 +1,32 @@
+﻿@model MonthlyLoansViewModel
+
+<script src="~/common.blocks/card/card__loan-chart.js" defer></script>
+
+<article class="card card_small">
+
+    <h2 class="card__title">Loan Status for [Month Name]</h2>
+
+    <section class="card__body">
+
+        <section class="card__info-wrapper">
+
+            <div class="card__value card__value_small card__paid card__paid_loan">Paid: ₱<strong>@Model.MonthlyPaidLoans</strong> </div>
+
+            <div class="card__value card__value_small card__deficit card__deficit_loan">Deficit: ₱<strong>@Model.MonthlyUnPaidLoans</strong> </div>
+
+            <section>
+                <div class="card__info"> Paid Members <strong class="card__paid">@Model.MonthlyPaidBorrowers</strong> </div>
+                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.MonthlyUnPaidBorrowers</strong> </div>
+            </section>
+
+        </section>
+
+        <div class="card__chart-container">
+            <canvas class="card__loan-chart"></canvas>
+        </div>
+
+    </section>
+
+</article>
+
+

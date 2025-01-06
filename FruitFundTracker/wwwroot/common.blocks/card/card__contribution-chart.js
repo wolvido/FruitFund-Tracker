@@ -1,9 +1,6 @@
 ﻿$(function () {
-    let paidContributionNum = parseInt($(".card__value_paid > strong").text());
-    let deficitContributionNum = parseInt($(".card__value_deficit > strong").text());
-
-    console.log(paidContributionNum);
-    console.log(deficitContributionNum);
+    let paidContributionNum = parseInt($(".card__paid_contribution > strong").text());
+    let deficitContributionNum = parseInt($(".card__deficit_contribution > strong").text());
 
     //set colors
     let paidContributionColor = "green";

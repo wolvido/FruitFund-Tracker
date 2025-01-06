@@ -40,20 +40,12 @@
     margin-top: 0;
 }
 
-.card__value {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
 .card__deficit {
     color: red;
-}
-
-.card__paid {
-    color: green;
 }
 
 .card__info {
     font-size: 0.8rem;
     font-weight: 200;
 }
+

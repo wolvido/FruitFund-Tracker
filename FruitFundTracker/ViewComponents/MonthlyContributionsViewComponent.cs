@@ -7,14 +7,13 @@ namespace FruitFundTracker.UI.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            var model = new ContributionsViewModel
+            var model = new MonthlyContributionsViewModel
             {
-                PaidContributions = 100,
-                UnPaidContributions = 50,
-                PaidMembers = 2,
-                UnPaidMembers = 1
+                MonthlyPaidContributions = 50,
+                MonthlyUnPaidContributions = 400,
+                MonthlyPaidMembers = 2,
+                MonthlyUnPaidMembers = 1
             };
-
 
             return View(model);
         }
