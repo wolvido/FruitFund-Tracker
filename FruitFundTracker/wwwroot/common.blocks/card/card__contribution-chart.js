@@ -3,8 +3,8 @@
     let deficitContributionNum = parseInt($(".card__deficit_contribution > strong").text());
 
     //set colors
-    let paidContributionColor = "green";
-    let deficitContributionColor = "red";
+    let paidContributionColor = "#6dc458";
+    let deficitContributionColor = "#ff3a3a";
 
     const ctx = $(".card__contribution-chart");
 

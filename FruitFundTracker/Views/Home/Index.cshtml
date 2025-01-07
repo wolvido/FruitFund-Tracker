@@ -2,23 +2,18 @@
     ViewBag.Title = "Dashboard";
 }
 
-<div class="cards" >
+<div class="card-wrapper" >
     
     <vc:monthly-deficit></vc:monthly-deficit>
-
-
     <vc:monthly-paid></vc:monthly-paid>
-
-
     <vc:monthly-contributions></vc:monthly-contributions>
-
     <vc:monthly-loans></vc:monthly-loans>
 
 </div>
 
-<div class="cards">
-    <div class="card card_large">
-        test
-    </div>
+<div class="card-wrapper">
+    <vc:yearly-progress></vc:yearly-progress>
+
+    <vc:monthly-unpaid-list></vc:monthly-unpaid-list>
 
 </div>

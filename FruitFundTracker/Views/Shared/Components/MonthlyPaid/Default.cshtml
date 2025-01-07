@@ -11,8 +11,8 @@
             <div class="card__value card__paid">₱@Model.MonthlyPaid</div>
 
             <section>
-                <div class="card__info card__info_contribution-paid"> Contribution Paid: ₱<strong>@Model.MonthlyContributionPaid</strong></div>
-                <div class="card__info card__info_loan-paid"> Repayment: ₱<strong>@Model.MonthlyRepaymentPaid</strong></div>
+                <div class="card__info"> Contribution Paid: ₱<strong class="card__paid card__paid_contribution">@Model.MonthlyContributionPaid</strong></div>
+                <div class="card__info"> Repayment: ₱<strong class="card__deficit card__paid_loan">@Model.MonthlyRepaymentPaid</strong></div>
                 <div class="card__monthly-due" hidden>@Model.MonthlyTotalDue</div>
             </section>
 

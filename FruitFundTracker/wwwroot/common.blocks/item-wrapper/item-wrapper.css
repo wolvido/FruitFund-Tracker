@@ -1,0 +1,10 @@
+﻿.item-wrapper {
+    display: flex;
+    list-style-type: none;
+    margin: 5px 0px 5px 0px;
+    padding: 0;
+}
+
+.item-wrapper_column {
+    flex-direction: column;
+}

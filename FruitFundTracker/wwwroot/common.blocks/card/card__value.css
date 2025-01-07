@@ -10,3 +10,8 @@
 /*.card__value_paid, .card__value_deficit {
     font-size: 1.3rem;
 }*/
+
+.card__value_inner {
+    color: #757575;
+    font-size: 1.5rem;
+}

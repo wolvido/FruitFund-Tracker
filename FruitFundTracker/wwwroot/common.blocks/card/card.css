@@ -14,12 +14,24 @@
 
 .card_large {
     height: 50vh;
-    flex: 1 1 400px;
+    flex: 2 1 400px;
+    gap: 13px;
+}
+.card_medium {
+    height: 50vh;
+    flex: 1 5 100px;
+    min-width: 200px;
 }
 
 .card__title {
     font-size: 14px;
     margin: 0;
+    white-space: nowrap;
+}
+
+.card__title_inner {
+    font-size: 14px;
+    color: #757575;
 }
 
 .card__info-wrapper {
@@ -35,13 +47,19 @@
     flex-grow: 1;
 }
 
+.card__inner-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 .card__chart-container {
     height: 100px;
     margin-top: 0;
 }
 
 .card__deficit {
-    color: red;
+    color: #ff3a3a;
 }
 
 .card__info {
@@ -49,3 +67,13 @@
     font-weight: 200;
 }
 
+.card__inner-card {
+    background-color: #F3F6FF;
+    display: flex;
+    border-radius: 5.5px;
+    padding: 8px 8px 8px 8px;
+    flex-direction: column;
+
+    min-height: 8vh;
+    min-width: 130px;
+}

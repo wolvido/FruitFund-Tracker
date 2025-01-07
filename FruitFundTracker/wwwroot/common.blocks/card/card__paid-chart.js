@@ -1,7 +1,7 @@
 ﻿$(function () {
 
-    let contributionPaid = $(".card__info_contribution-paid > strong");
-    let loanPaid = $(".card__info_loan-paid > strong");
+    let contributionPaid = $(".card__paid_contribution").first();
+    let loanPaid = $(".card__paid_loan").first();
     let monthlyTotalDue = $(".card__monthly-due").first();
 
     let contributionPaidNum = parseInt(contributionPaid.text());
@@ -11,9 +11,9 @@
     let monthlyRemainingDue = monthlyTotalDueNum - (contributionPaidNum + loanPaidNum);
 
     //set colors
-    let contributionPaidColor = "blue";
-    let loanPaidColor = "#512DA8";
-    let monthlyRemainingDueColor = "red";
+    let contributionPaidColor = "#4077cc";
+    let loanPaidColor = "#704dcb";
+    let monthlyRemainingDueColor = "#ff3a3a";
 
     contributionPaid.css("color", contributionPaidColor);
     loanPaid.css("color", loanPaidColor);

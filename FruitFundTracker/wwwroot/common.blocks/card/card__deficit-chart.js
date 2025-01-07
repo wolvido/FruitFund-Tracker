@@ -1,7 +1,7 @@
 ﻿$(function() {
 
-    let contributionDeficit = $(".card__info_contribution-deficit > strong");
-    let loanDeficit = $(".card__info_loan > strong");
+    let contributionDeficit = $(".card__deficit_contribution").first();
+    let loanDeficit = $(".card__deficit_loan").first();
     let monthlyTotalDue = $(".card__monthly-due").first();
 
     let contributionDeficitNum = parseInt(contributionDeficit.text());
@@ -12,8 +12,8 @@
 
     //set colors
     let contributionDeficitColor = "#FF6F00";
-    let loanDeficitColor = "#FFD54F";
-    let monthlyRemainingDueColor = "green";
+    let loanDeficitColor = "#ff3a3a";
+    let monthlyRemainingDueColor = "#6dc458";
 
     contributionDeficit.css("color", contributionDeficitColor); 
     loanDeficit.css("color", loanDeficitColor);

@@ -1,5 +1,5 @@
 ﻿
-.cards {
+.card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -10,7 +10,7 @@
 
 
 @media (max-width: 900px) {
-    .cards {
+    .card-wrapper {
         flex-direction: column;
         flex-wrap: nowrap; 
     }

@@ -3,8 +3,8 @@
     let deficitLoanNum = parseInt($(".card__deficit_loan > strong").text());
 
     //set colors
-    let paidLoanColor = "green";
-    let deficitLoanColor = "red";
+    let paidLoanColor = "#6dc458";
+    let deficitLoanColor = "#ff3a3a";
 
     const ctx = $(".card__loan-chart");
 
