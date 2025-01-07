@@ -10,18 +10,18 @@
 
         <section class="card__info-wrapper">
 
-            <div class="card__value card__value_small card__paid card__paid_loan">Paid: ₱<strong>@Model.MonthlyPaidLoans</strong> </div>
+            <div class="card__value card__value_small card__paid card__paid_loan">Paid: ₱<strong>@Model.PaidLoans</strong> </div>
 
-            <div class="card__value card__value_small card__deficit card__deficit_loan">Deficit: ₱<strong>@Model.MonthlyUnPaidLoans</strong> </div>
+            <div class="card__value card__value_small card__deficit card__deficit_loan">Deficit: ₱<strong>@Model.UnPaidLoans</strong> </div>
 
             <section>
-                <div class="card__info"> Paid Borrowers <strong class="card__paid">@Model.MonthlyPaidBorrowers</strong> </div>
-                <div class="card__info"> Unpaid Borrowers <strong class="card__deficit">@Model.MonthlyUnPaidBorrowers</strong> </div>
+                <div class="card__info"> Paid Borrowers <strong class="card__paid">@Model.PaidBorrowers</strong> </div>
+                <div class="card__info"> Unpaid Borrowers <strong class="card__deficit">@Model.UnPaidBorrowers</strong> </div>
             </section>
 
         </section>
 
-        <div class="card__chart-container">
+        <div class="card__chart-container card__chart-container_small">
             <canvas class="card__loan-chart"></canvas>
         </div>
 

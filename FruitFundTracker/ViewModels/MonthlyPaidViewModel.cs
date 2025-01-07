@@ -2,11 +2,9 @@
 {
     public class MonthlyPaidViewModel
     {
-        public decimal MonthlyPaid { get; set; }
-        public decimal MonthlyContributionPaid { get; set; }
-        public decimal MonthlyRepaymentPaid { get; set; }
-        public decimal MonthlyTotal { get; set; }
-
-        public decimal MonthlyTotalDue { get; set; }
+        public decimal TotalPaid { get; set; }
+        public decimal ContributionPaid { get; set; }
+        public decimal RepaymentPaid { get; set; }
+        public decimal TotalDue { get; set; }
     }
 }

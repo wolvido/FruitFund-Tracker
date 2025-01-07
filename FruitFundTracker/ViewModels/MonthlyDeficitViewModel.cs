@@ -2,10 +2,10 @@
 {
     public class MonthlyDeficitViewModel
     {
-        public decimal MonthlyDeficit { get; set; }
-        public decimal MonthlyContributionDeficit { get; set; }
+        public decimal TotalDeficit { get; set; }
+        public decimal ContributionDeficit { get; set; }
 
-        public decimal MonthlyRepaymentDeficit { get; set; }
-        public decimal MonthlyTotalDue { get; set; }
+        public decimal RepaymentDeficit { get; set; }
+        public decimal TotalDue { get; set; }
     }
 }

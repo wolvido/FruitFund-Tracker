@@ -10,18 +10,18 @@
 
         <section class="card__info-wrapper">
 
-            <div class="card__value card__value_small card__paid card__paid_contribution">Paid: ₱<strong>@Model.MonthlyPaidContributions</strong> </div>
+            <div class="card__value card__value_small card__paid card__paid_contribution">Paid: ₱<strong>@Model.PaidContributions</strong> </div>
 
-            <div class="card__value card__value_small card__deficit card__deficit_contribution">Deficit: ₱<strong>@Model.MonthlyUnPaidContributions</strong> </div>
+            <div class="card__value card__value_small card__deficit card__deficit_contribution">Deficit: ₱<strong>@Model.UnPaidContributions</strong> </div>
 
             <section>
-                <div class="card__info"> Paid Members <strong class="card__paid">@Model.MonthlyPaidMembers</strong> </div>
-                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.MonthlyUnPaidMembers</strong> </div>
+                <div class="card__info"> Paid Members <strong class="card__paid">@Model.PaidMembers</strong> </div>
+                <div class="card__info"> Unpaid Members <strong class="card__deficit">@Model.UnPaidMembers</strong> </div>
             </section>
 
         </section>
 
-        <div class="card__chart-container">
+        <div class="card__chart-container card__chart-container_small">
             <canvas class="card__contribution-chart"></canvas>
         </div>
 

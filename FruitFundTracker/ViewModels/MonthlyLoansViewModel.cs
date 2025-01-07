@@ -2,9 +2,9 @@
 {
     public class MonthlyLoansViewModel
     {
-        public decimal MonthlyPaidLoans { get; set; }
-        public decimal MonthlyUnPaidLoans { get; set; }
-        public int MonthlyPaidBorrowers { get; set; }
-        public int MonthlyUnPaidBorrowers { get; set; }
+        public decimal PaidLoans { get; set; }
+        public decimal UnPaidLoans { get; set; }
+        public int PaidBorrowers { get; set; }
+        public int UnPaidBorrowers { get; set; }
     }
 }

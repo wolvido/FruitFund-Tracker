@@ -2,11 +2,16 @@
 
 namespace FruitFundTracker.UI.ViewComponents
 {
-    public class YearlyProgressViewComponent : ViewComponent
+    public class ProgressViewComponent : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
             return View();
         }
+
+        //public IViewComponentResult GetProgress()
+        //{
+
+        //}
     }
 }

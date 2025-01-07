@@ -53,11 +53,6 @@
     gap: 15px;
 }
 
-.card__chart-container {
-    height: 100px;
-    margin-top: 0;
-}
-
 .card__deficit {
     color: #ff3a3a;
 }
@@ -75,5 +70,7 @@
     flex-direction: column;
 
     min-height: 8vh;
-    min-width: 130px;
+    min-width: 120px;
+
+    align-items: center;
 }

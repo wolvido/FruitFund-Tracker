@@ -8,17 +8,17 @@
     <section class="card__body">
         <section class="card__info-wrapper">
 
-            <div class="card__value card__paid">₱@Model.MonthlyPaid</div>
+            <div class="card__value card__paid">₱@Model.TotalPaid</div>
 
             <section>
-                <div class="card__info"> Contribution Paid: ₱<strong class="card__paid card__paid_contribution">@Model.MonthlyContributionPaid</strong></div>
-                <div class="card__info"> Repayment: ₱<strong class="card__deficit card__paid_loan">@Model.MonthlyRepaymentPaid</strong></div>
-                <div class="card__monthly-due" hidden>@Model.MonthlyTotalDue</div>
+                <div class="card__info"> Contribution Paid: ₱<strong class="card__paid card__paid_contribution">@Model.ContributionPaid</strong></div>
+                <div class="card__info"> Repayment: ₱<strong class="card__deficit card__paid_loan">@Model.RepaymentPaid</strong></div>
+                <div class="card__monthly-due" hidden>@Model.TotalDue</div>
             </section>
 
         </section>
 
-        <div class="card__chart-container">
+        <div class="card__chart-container card__chart-container_small">
             <canvas class="card__paid-chart"></canvas>
         </div>
 

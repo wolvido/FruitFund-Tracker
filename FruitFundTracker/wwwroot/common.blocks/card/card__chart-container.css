@@ -1,0 +1,11 @@
+﻿.card__chart-container {
+    margin-top: 0;
+}
+
+.card__chart-container_small {
+    max-height: 100px;
+}
+
+card__chart-container_large {
+    max-height: 300px;
+}

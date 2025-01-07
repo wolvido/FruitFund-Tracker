@@ -9,10 +9,10 @@ namespace FruitFundTracker.UI.ViewComponents
         {
             var model = new MonthlyPaidViewModel
             {
-                MonthlyPaid = 100,
-                MonthlyContributionPaid = 50,
-                MonthlyRepaymentPaid = 50,
-                MonthlyTotalDue = 1000
+                TotalPaid = 100,
+                ContributionPaid = 50,
+                RepaymentPaid = 50,
+                TotalDue = 1000
             
             };
 

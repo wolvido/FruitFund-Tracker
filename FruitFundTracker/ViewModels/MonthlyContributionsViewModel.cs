@@ -2,9 +2,9 @@
 {
     public class MonthlyContributionsViewModel
     {
-        public decimal MonthlyPaidContributions { get; set; }
-        public decimal MonthlyUnPaidContributions { get; set; }
-        public int MonthlyPaidMembers { get; set; }
-        public int MonthlyUnPaidMembers { get; set; }
+        public decimal PaidContributions { get; set; }
+        public decimal UnPaidContributions { get; set; }
+        public int PaidMembers { get; set; }
+        public int UnPaidMembers { get; set; }
     }
 }
