@@ -6,6 +6,22 @@
     max-height: 100px;
 }
 
-card__chart-container_large {
-    max-height: 300px;
+.card__chart-container_large {
+    height: 70%;
+    max-width: 1000px;
+    width: 99%;
+    align-self: center;
+    
+
+
+/*    flex: 0 0 0;
+    overflow: hidden;
+    width: 99%;
+    height: 70%;*/
+
+
+    /*    height: 50%;
+    width: 67%;
+    align-self: center;
+    position: absolute;*/
 }

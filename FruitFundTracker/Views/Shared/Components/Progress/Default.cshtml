@@ -1,4 +1,12 @@
-﻿<div class="card card_large">
+﻿@model YearProgressViewModel
+
+<script>
+        var YearProgressData = '@Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model))';
+</script>
+
+<script src="~/common.blocks/card/card__progress-chart.js" defer></script>
+
+<div class="card card_large">
     <h2 class="card__title">Progress</h2>
 
     <section class="card__inner-card-container">
@@ -23,13 +31,16 @@
                 Year Progress
             </h3>
 
-            <div class="card__value card__value_inner">20%</div>
+            <div class="card__value card__value_inner">@Model.YearProgressPercentage</div>
 
         </div>
+
     </section>
 
-    <div class="card__chart-container card__chart-container_large">
-        <canvas class="card__progress-chart"></canvas>
-    </div>
+
+        <div class="card__chart-container card__chart-container_large">
+            <canvas class="card__progress-chart"></canvas>
+        </div>
+
 
 </div>

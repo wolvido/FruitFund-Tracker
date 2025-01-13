@@ -13,14 +13,16 @@
 }
 
 .card_large {
-    height: 50vh;
+/*    min-height: 50vh;*/
     flex: 2 1 400px;
     gap: 13px;
+
 }
+
 .card_medium {
-    height: 50vh;
+    min-height: 50vh;
     flex: 1 5 100px;
-    min-width: 200px;
+    /*min-width: 200px;*/
 }
 
 .card__title {
@@ -50,6 +52,7 @@
 .card__inner-card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
