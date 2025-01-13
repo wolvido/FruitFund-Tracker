@@ -9,3 +9,10 @@ Over time, the group grew, and they began using the money not only for the fruit
 Aside for buying fruits, the system eventually adapted to support various community needs, from shared projects to community support and saving together.
 
 This system inspired the creation of FruitFund Tracker, a tool designed to help informal groups like this easily manage and track their monthly contributions, loans, and savings goals. The name "FruitFund" is an ode to its original purpose.
+
+### Dashboard Initial Build
+![dashboard](https://github.com/user-attachments/assets/3c59d6e2-f992-449f-aece-e5ad1a88bb14)
+
+![image](https://github.com/user-attachments/assets/4fbc818b-ea80-4590-8424-bd3afd6eeb6e)
+![image](https://github.com/user-attachments/assets/34a2e4f5-ba59-4e74-92f9-8c8e1a1f3db1)
+
